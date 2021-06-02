@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop.sprinterTask.Controller">
+   <children>
+      <Button layoutX="41.0" layoutY="29.0" mnemonicParsing="false" onAction="#loadData" prefHeight="58.0" prefWidth="122.0" text="Load Data" />
+      <ComboBox fx:id="comboBox" layoutX="41.0" layoutY="106.0" prefWidth="150.0" />
+      <RadioButton fx:id="raceNumber" layoutX="237.0" layoutY="79.0" mnemonicParsing="false" selected="true" text="Race Number">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioButtons" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="overallPos" layoutX="353.0" layoutY="79.0" mnemonicParsing="false" text="Overall Position" toggleGroup="$radioButtons" />
+      <RadioButton fx:id="halfTime" layoutX="484.0" layoutY="79.0" mnemonicParsing="false" text="Half Time" toggleGroup="$radioButtons" />
+      <TextArea fx:id="textField" layoutX="26.0" layoutY="142.0" prefHeight="332.0" prefWidth="659.0" />
+   </children>
+</AnchorPane>
